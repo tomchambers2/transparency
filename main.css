@@ -27,8 +27,10 @@ header {
   right: 30px;
   top: 0;
   font-size: 3.5em; }
+  .info a {
+    color: #000; }
 
-.info:hover {
+.info:hover a {
   cursor: pointer;
   color: #575757; }
 
@@ -42,7 +44,7 @@ header {
   overflow: scroll;
   position: relative;
   padding-top: 45px;
-  border-top: 3px solid #3D6175;
+  border-top: 0px solid #3D6175;
   margin: 0;
   padding: 0;
   padding-top: 30px; }
@@ -129,7 +131,8 @@ header {
   float: right;
   position: relative;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #F0EDE5; }
   .live .options {
     cursor: pointer;
     background: #fff;
@@ -154,9 +157,6 @@ header {
       .live .options ul li:hover {
         background: #E5E5E5; }
 
-.video {
-  display: none; }
-
 .heartbeat {
   height: 100%;
   width: 100%;
@@ -175,6 +175,11 @@ header {
   height: 100%;
   width: 100%;
   display: block; }
+
+.video {
+  display: none;
+  height: 100%;
+  width: 100%; }
 
 #live-video {
   height: 100%;

@@ -46,7 +46,7 @@ window.onload = function() {
 		};
 	};
 
-	var oscillator = Oscillator(78,92,2);
+	var oscillator = Oscillator(78,160,10);
 
 	setInterval(function() {
 		var beat = oscillator();
@@ -55,6 +55,24 @@ window.onload = function() {
 		document.getElementById('heartbeat-video').playbackRate = rate;
 		$('.bpm').text(beat+' bpm');
 	},2000);
+
+	var newCards = [
+		'<div class="card"><span class="top"><i class="fa fa-foursquare"></i> Checked in (Foursquare)</span> Went to <strong>The Old Tavern, Loughborough</strong> with Jim Hardcastle and Harry Sands</div>',
+		'<div class="card"><span class="top"><i class="fa fa-bus"></i> Transport (Moves)</span> Journey on <strong>bus</strong> from <strong>Loughborough</strong> to <strong>Castle Donington</strong></div>',
+		'<div class="card"><span class="top"><i class="fa fa-smile-o"></i> Mood logged (iMoodJournal)</span> Currently very happy - 9/10</div>',
+		'<div class="card"><span class="top"><i class="fa fa-google"></i> 00:13 Searched for \'planet of apes ending\'</span> Visited <a href="http://en.wikipedia.org/wiki/Planet_of_the_Apes_(1968_film)">Planet of the Apes (1968 film)</a> on Wikipedia</div>',		
+		'<div class="card"><span class="top"><i class="fa fa-home"></i> 01:31 Sleep logged (SleepCycle)</span> Began sleep</div>',
+		'<div class="card"><span class="top"><i class="fa fa-google"></i> 02:31 Searched for \'what to do can\'t sleep\'</span> No results visited</div>',
+		'<div class="card"><span class="top"><i class="fa fa-google"></i> 03:40 Searched for \'armpit lump cancer\'</span> Visited <a href="http://www.nhs.uk/conditions/lumps-swellings/Pages/Introduction.aspx">nhs.uk</a></div>',		
+	]
+	var cardIncrement = 0;
+
+	setInterval(function() {
+		if (cardIncrement < newCards.length) {
+			$(newCards[cardIncrement]).prependTo($('.weather.rain')).hide().slideDown('fast');
+			cardIncrement++;
+		};
+	},5000);
 
 	function getLocation() {
 		var url = 'http://0.0.0.0:8080';

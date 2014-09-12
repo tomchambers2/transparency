@@ -29,8 +29,11 @@ header {
 	right: 30px;
 	top: 0;
 	font-size: 3.5em;
+	a {
+		color: #000;
+	}
 }
-.info:hover {
+.info:hover a {
 	cursor: pointer;
 	color: #575757;
 }
@@ -44,7 +47,7 @@ header {
 	overflow: scroll;
 	position: relative;
 	padding-top: 45px;
-	border-top: 3px solid #3D6175;
+	border-top: 0px solid #3D6175;
 	ul {
 		position: absolute;
 		top: 0;
@@ -146,6 +149,7 @@ header {
 	position: relative;
 	margin: 0;
 	padding: 0;
+	background: #F0EDE5;
 	.options {
 		cursor: pointer;
 		background: #fff;
@@ -175,9 +179,7 @@ header {
 		}
 	}
 }
-.video {
-	display: none;
-}
+
 .heartbeat {
 	height: 100%;
 	width: 100%;
@@ -197,6 +199,11 @@ header {
 	height: 100%;
 	width: 100%;
 	display: block;
+}
+.video {
+	display: none;
+	height: 100%;
+	width: 100%;
 }
 #live-video {
 	height: 100%;
