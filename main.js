@@ -75,7 +75,7 @@ window.onload = function() {
 	},5000);
 
 	function getLocation() {
-		var url = 'http://0.0.0.0:8080';
+		var url = 'http://transparency-moves-proxy.herokuapp.com/';
 		$.get(url, function(data) {
 			console.log(JSON.parse(data));
 			var location = JSON.parse(data);
