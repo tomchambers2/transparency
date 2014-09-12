@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400);
+/* Put your CSS here */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Source Sans Pro, Sans serif;
+  font-weight: 100;
+  font-size: 18px; }
+
+header {
+  height: 13%;
+  background: #69A8CA;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+
+.header-title {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 1px 1px 0px grey;
+  font-family: Source Sans Pro, Sans serif;
+  font-weight: 100; }
+
+.info {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  font-size: 3.5em; }
+
+.info:hover {
+  cursor: pointer;
+  color: #575757; }
+
+.events {
+  width: calc(30% - 1px);
+  height: calc(87% - 33px);
+  border-right: 1px solid #CACACA;
+  float: left;
+  padding: 1%;
+  background: #E4E4E4;
+  overflow: scroll;
+  position: relative;
+  padding-top: 45px;
+  border-top: 3px solid #3D6175;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px; }
+  .events ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    box-shadow: 2px 2px 0px #CACACA;
+    text-align: center;
+    height: 30px; }
+    .events ul li {
+      cursor: pointer;
+      width: calc(46% - 2px);
+      padding: 0 2%;
+      height: 30px;
+      float: left;
+      background: #fff;
+      border-right: 1px solid #CACACA;
+      border-left: 1px solid #CACACA;
+      margin: 0;
+      list-style: none;
+      line-height: 30px; }
+    .events ul li:hover {
+      background: #E5E5E5; }
+
+.rain {
+  background: linear-gradient(to right, #AFCEFD 2%, transparent 2%); }
+
+.sunny {
+  background: linear-gradient(to right, #EADC7F 2%, transparent 2%); }
+
+.card {
+  width: 90%;
+  padding: 2%;
+  margin: 2%;
+  margin-left: 4%;
+  margin-bottom: 3%;
+  background: #fff;
+  box-shadow: 2px 2px 0px #CACACA;
+  position: relative;
+  padding-top: 40px; }
+  .card .top {
+    width: 100%;
+    background: #8F8F8F;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 5px;
+    box-sizing: border-box; }
+  .card i {
+    width: 6%; }
+
+.pod {
+  width: 50%;
+  border-radius: 500px;
+  margin: auto;
+  background: green;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  margin: 5% auto 0 auto; }
+
+.pod ~ .pod {
+  margin: 0 auto; }
+
+.week {
+  display: none; }
+  .week .pipe {
+    width: 4%;
+    background: #8F8F8F;
+    height: 20px;
+    margin: 0 auto; }
+
+.live {
+  width: 70%;
+  height: 87%;
+  float: right;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+  .live .options {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CACACA;
+    position: absolute;
+    padding: 6px;
+    right: 0;
+    top: 0;
+    z-index: 2000; }
+    .live .options ul {
+      margin: 0;
+      padding: 0; }
+      .live .options ul li {
+        background: #fff;
+        display: inline;
+        list-style-type: none;
+        border-right: 1px solid #CACACA;
+        margin: 0;
+        padding: 6px; }
+      .live .options ul li:last-of-type {
+        border-right: none; }
+      .live .options ul li:hover {
+        background: #E5E5E5; }
+
+.video {
+  display: none; }
+
+.heartbeat {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  position: relative;
+  display: none; }
+  .heartbeat .bpm {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 2.5em;
+    color: #fff;
+    z-index: 1000; }
+
+#heartbeat-video {
+  height: 100%;
+  width: 100%;
+  display: block; }
+
+#live-video {
+  height: 100%;
+  width: 100%;
+  display: block; }
+
+.location {
+  height: 100%;
+  width: 100%; }
+
+#gmap, .map, .canvas_map {
+  height: 100%;
+  width: 100%;
+  display: block; }
+
+/*# sourceMappingURL=main.css.map */
