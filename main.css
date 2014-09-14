@@ -9,11 +9,14 @@ html, body {
   font-size: 18px; }
 
 header {
-  height: 13%;
+  //height: (5.5em - 10px);
   background: #69A8CA;
   width: 100%;
+  padding: 10px 0;
   text-align: center;
-  position: relative; }
+  position: relative; 
+  border-bottom: 5px solid #345363;
+}
 
 .header-title {
   font-size: 3em;
@@ -21,6 +24,24 @@ header {
   text-shadow: 1px 1px 0px grey;
   font-family: Source Sans Pro, Sans serif;
   font-weight: 100; }
+
+.about {
+  max-width: 60%;
+  margin: 0 auto 5% auto;
+  text-align: justify;
+  font-weight: 300;
+}
+.about p {
+  margin: 2% 0;
+}
+.alert {
+  background: #FFFFA5;
+  padding: 10px;
+}
+.about h1 {
+  text-align: center;
+  margin-top: 10%;
+}
 
 .info {
   position: absolute;
