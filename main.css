@@ -9,14 +9,13 @@ html, body {
   font-size: 18px; }
 
 header {
-  //height: (5.5em - 10px);
+  height: 75px;
   background: #69A8CA;
   width: 100%;
   padding: 10px 0;
   text-align: center;
-  position: relative; 
-  border-bottom: 5px solid #345363;
-}
+  position: relative;
+  border-bottom: 5px solid #345363; }
 
 .header-title {
   font-size: 3em;
@@ -29,19 +28,18 @@ header {
   max-width: 60%;
   margin: 0 auto 5% auto;
   text-align: justify;
-  font-weight: 300;
-}
+  font-weight: 300; }
+
 .about p {
-  margin: 2% 0;
-}
+  margin: 2% 0; }
+
 .alert {
   background: #FFFFA5;
-  padding: 10px;
-}
+  padding: 10px; }
+
 .about h1 {
   text-align: center;
-  margin-top: 10%;
-}
+  margin-top: 10%; }
 
 .info {
   position: absolute;
@@ -55,9 +53,12 @@ header {
   cursor: pointer;
   color: #575757; }
 
+.bottom {
+  height: calc(100% - 100px); }
+
 .events {
   width: calc(30% - 1px);
-  height: calc(87% - 33px);
+  height: calc(100% - 30px);
   border-right: 1px solid #CACACA;
   float: left;
   padding: 1%;
@@ -148,7 +149,7 @@ header {
 
 .live {
   width: 70%;
-  height: 87%;
+  height: 100%;
   float: right;
   position: relative;
   margin: 0;
